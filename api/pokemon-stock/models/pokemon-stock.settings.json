@@ -1,0 +1,28 @@
+{
+  "kind": "collectionType",
+  "collectionName": "pokemon_stocks",
+  "info": {
+    "name": "PokemonStock"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "quantity": {
+      "type": "biginteger",
+      "default": "0"
+    },
+    "cost": {
+      "type": "decimal",
+      "required": true
+    },
+    "pokemon_id": {
+      "type": "biginteger",
+      "unique": true,
+      "required": true
+    }
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/pokemon-stocks",
+      "handler": "pokemon-stock.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/pokemon-stocks/count",
+      "handler": "pokemon-stock.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/pokemon-stocks/:id",
+      "handler": "pokemon-stock.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/pokemon-stocks",
+      "handler": "pokemon-stock.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/pokemon-stocks/:id",
+      "handler": "pokemon-stock.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/pokemon-stocks/:id",
+      "handler": "pokemon-stock.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
