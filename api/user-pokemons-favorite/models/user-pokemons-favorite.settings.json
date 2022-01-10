@@ -1,0 +1,23 @@
+{
+  "kind": "collectionType",
+  "collectionName": "user_pokemons_favorites",
+  "info": {
+    "name": "UserPokemonsFavorite"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "pokemon_id": {
+      "model": "pokemon-stock"
+    },
+    "users_permissions_user": {
+      "plugin": "users-permissions",
+      "model": "user",
+      "via": "user_pokemons_favorites"
+    }
+  }
+}

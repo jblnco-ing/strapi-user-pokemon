@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/user-pokemons-favorites",
+      "handler": "user-pokemons-favorite.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/user-pokemons-favorites/count",
+      "handler": "user-pokemons-favorite.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/user-pokemons-favorites/:id",
+      "handler": "user-pokemons-favorite.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/user-pokemons-favorites",
+      "handler": "user-pokemons-favorite.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/user-pokemons-favorites/:id",
+      "handler": "user-pokemons-favorite.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/user-pokemons-favorites/:id",
+      "handler": "user-pokemons-favorite.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

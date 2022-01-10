@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "user_pokemons",
+  "info": {
+    "name": "UserPokemons",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "users_permissions_user": {
+      "plugin": "users-permissions",
+      "model": "user",
+      "via": "user_pokemons"
+    },
+    "quantity": {
+      "type": "biginteger",
+      "default": "0",
+      "min": "0"
+    },
+    "pokemon_stock": {
+      "model": "pokemon-stock",
+      "via": "user_pokemon"
+    }
+  }
+}
