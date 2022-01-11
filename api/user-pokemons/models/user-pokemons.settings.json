@@ -12,19 +12,21 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "users_permissions_user": {
-      "plugin": "users-permissions",
-      "model": "user",
-      "via": "user_pokemons"
-    },
     "quantity": {
       "type": "biginteger",
       "default": "0",
       "min": "0"
     },
-    "pokemon_stock": {
-      "model": "pokemon-stock",
-      "via": "user_pokemon"
+    "user_id": {
+      "type": "biginteger",
+      "required": true,
+      "min": "1"
+    },
+    "pokemon_id": {
+      "type": "biginteger",
+      "required": true,
+      "unique": false,
+      "min": "1"
     }
   }
 }

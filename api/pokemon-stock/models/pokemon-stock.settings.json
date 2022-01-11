@@ -25,10 +25,6 @@
       "type": "biginteger",
       "unique": true,
       "required": true
-    },
-    "user_pokemon": {
-      "via": "pokemon_stock",
-      "model": "user-pokemons"
     }
   }
 }
